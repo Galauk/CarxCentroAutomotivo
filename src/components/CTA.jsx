@@ -15,7 +15,7 @@ export default function CTA() {
         </div>
 
         <div className="cta__actions">
-          <a href="https://wa.me/4792288950 className="btn btn-outline cta__btn">
+          <a href="https://wa.me/+554792288950" className="btn btn-outline cta__btn">
             <WhatsAppIcon />
             WhatsApp (11) 98765-4321
           </a>

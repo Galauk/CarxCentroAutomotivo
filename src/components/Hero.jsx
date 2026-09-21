@@ -27,7 +27,7 @@ export default function Hero() {
           </ul>
 
           <a
-            href="https://wa.me/4792288950
+            href="https://wa.me/+554792288950"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary hero__btn"
