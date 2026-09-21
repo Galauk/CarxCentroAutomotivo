@@ -1,0 +1,109 @@
+:root {
+  --bg-primary: #0b0b0c;
+  --bg-secondary: #131315;
+  --bg-card: #1a1a1d;
+  --border-subtle: #2a2a2e;
+  --text-primary: #ffffff;
+  --text-secondary: #a5a5ab;
+  --text-muted: #6f6f76;
+  --red-accent: #e11d2e;
+  --red-accent-hover: #c8121f;
+  --whatsapp: #25d366;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --max-width: 1180px;
+  --font-heading: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--red-accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--red-accent-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  border-color: var(--red-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--red-accent);
+  outline-offset: 2px;
+}

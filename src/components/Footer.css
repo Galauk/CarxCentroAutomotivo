@@ -1,0 +1,133 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 60px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--red-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.footer__logo-text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.footer__logo-text small {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.62rem;
+  color: var(--text-secondary);
+}
+
+.footer__brand p {
+  margin-top: 16px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  max-width: 32ch;
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer__social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.footer__social a:hover {
+  border-color: var(--red-accent);
+  color: var(--red-accent);
+}
+
+.footer__col h4 {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col li,
+.footer__col a {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.footer__col a:hover {
+  color: var(--text-primary);
+}
+
+.footer__bottom {
+  border-top: 1px solid var(--border-subtle);
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer__legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__legal a:hover {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
