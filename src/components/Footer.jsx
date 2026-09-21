@@ -34,18 +34,16 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Contato</h4>
           <ul>
-            <li>(11) 98765-4321</li>
-            <li>(11) 3456-7890</li>
-            <li>contato@carxautocenter.com.br</li>
-            <li>Av. das Oficinas, 123 - Vila Mecânica<br />São Paulo - SP, 03245-000</li>
+            <li>(47) 98765-4321</li>
+            <li>R. 418, 475 - Morretes<br />Itapema - SC, 88220-000</li>
           </ul>
         </div>
 
         <div className="footer__col">
           <h4>Horário de funcionamento</h4>
           <ul>
-            <li>Segunda a Sexta: 08h às 18h</li>
-            <li>Sábado: 08h às 13h</li>
+            <li>Segunda a Quinta: 08:15h às 18h</li>
+            <li>Sexta: 09h às 18h</li>
           </ul>
         </div>
       </div>

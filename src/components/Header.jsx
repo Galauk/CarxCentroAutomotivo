@@ -36,7 +36,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="https://wa.me/5511987654321"
+          href="https://wa.me/4792288950
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary header__cta"
