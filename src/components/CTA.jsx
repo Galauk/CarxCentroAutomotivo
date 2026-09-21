@@ -17,11 +17,11 @@ export default function CTA() {
         <div className="cta__actions">
           <a href="https://wa.me/+554792288950" className="btn btn-outline cta__btn">
             <WhatsAppIcon />
-            WhatsApp (11) 98765-4321
+            WhatsApp (47) 9228-8950
           </a>
-          <a href="tel:+551134567890" className="btn btn-outline cta__btn">
+          <a href="tel:+554792288950" className="btn btn-outline cta__btn">
             <PhoneIcon />
-            Ligar (11) 3456-7890
+            Ligar (47) 9228-8950
           </a>
         </div>
       </div>

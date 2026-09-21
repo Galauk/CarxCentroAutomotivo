@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Contato</h4>
           <ul>
-            <li>(47) 98765-4321</li>
+            <li>(47) 9228-8950</li>
             <li>R. 418, 475 - Morretes<br />Itapema - SC, 88220-000</li>
           </ul>
         </div>
