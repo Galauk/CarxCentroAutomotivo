@@ -2,18 +2,23 @@ import './About.css';
 
 const DIFFERENTIALS = [
   {
-    title: 'Tecnologia de ponta',
-    description: 'Equipamentos modernos e atualizados para diagnósticos precisos e serviços de alta qualidade.',
+    title: 'Diagnóstico antes da troca',
+    description: 'Primeiro procuramos entender e confirmar a origem do problema.',
     icon: 'tech',
   },
   {
-    title: 'Profissionais qualificados',
-    description: 'Equipe técnica certificada e em constante capacitação para atender com excelência.',
+    title: 'Você vê o que encontramos',
+    description: 'Sempre que possível, mostramos imagens, medições ou o próprio componente.',
     icon: 'team',
   },
   {
-    title: 'Atendimento personalizado',
-    description: 'Cuidamos do seu veículo como se fosse o nosso, com transparência, agilidade e respeito.',
+    title: 'Prioridades bem definidas',
+    description: 'Separamos o que precisa ser resolvido, o que pode ser programado e o que deve apenas ser acompanhado.',
+    icon: 'priority',
+  },
+  {
+    title: 'Serviço somente com autorização',
+    description: 'Você recebe a explicação e decide antes de qualquer execução.',
     icon: 'care',
   },
 ];
@@ -23,15 +28,14 @@ export default function About() {
     <section id="sobre" className="about">
       <div className="container about__inner">
         <div className="about__text">
-          <p className="about__eyebrow">Sobre / Diferenciais</p>
+          <p className="about__eyebrow">Diferenciais</p>
           <h2 className="about__title">
-            Tecnologia, cuidado e atendimento que fazem a diferença
+            A gente avalia, mostra e explica. Você decide com segurança.
           </h2>
           <p className="about__desc">
-            Na Car-X Auto Center, cada veículo recebe atenção especializada,
-            com equipamentos modernos e uma equipe preparada para oferecer o
-            melhor serviço. Nosso compromisso é com a sua segurança, a
-            performance do seu carro e a sua satisfação.
+            Nosso diferencial começa no diagnóstico: antes de indicar uma
+            troca, procuramos entender, avaliar e confirmar o que está
+            acontecendo.
           </p>
         </div>
 
@@ -68,6 +72,12 @@ function DifferentialIcon({ name }) {
         <svg {...common}>
           <circle cx="12" cy="8" r="3.2" stroke="#fff" strokeWidth="1.6" />
           <path d="M5 20c1-3.5 4-5 7-5s6 1.5 7 5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" />
+        </svg>
+      );
+    case 'priority':
+      return (
+        <svg {...common}>
+          <path d="M5 7h14M5 12h9M5 17h5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
       );
     case 'care':

@@ -26,10 +26,15 @@
 
 .hero__subtitle {
   margin-top: 22px;
-  max-width: 46ch;
+  max-width: 50ch;
   color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.65;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.hero__subtitle strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .hero__features {
@@ -47,10 +52,21 @@
   color: var(--text-primary);
 }
 
-.hero__btn {
+.hero__actions {
   margin-top: 32px;
-  padding: 16px 28px;
-  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero__btn {
+  padding: 16px 26px;
+  font-size: 0.98rem;
+}
+
+.hero__btn-secondary {
+  padding: 16px 26px;
+  font-size: 0.98rem;
 }
 
 .hero__media {

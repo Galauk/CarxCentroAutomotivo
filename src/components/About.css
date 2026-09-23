@@ -32,9 +32,16 @@
 }
 
 .about__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
+  align-content: start;
+}
+
+@media (max-width: 620px) {
+  .about__list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about__item {

@@ -1,5 +1,26 @@
 import './Footer.css';
 
+// TODO: troque pelos links reais das redes sociais da Car X Auto Center.
+const SOCIAL_LINKS = {
+  instagram: '#',
+  facebook: '#',
+  whatsapp: 'https://wa.me/554792288950',
+  youtube: '#',
+};
+
+// TODO: troque pelo endereço real e, se preferir, cole o link "Compartilhar"
+// do Google Maps no lugar de MAPS_LINK (evita depender de geocodificação por texto).
+const ADDRESS_LINE_1 = 'R. 418, 475 - Morretes';
+const ADDRESS_LINE_2 = 'Itapema - SC, 88220-000<, 88220-000';
+const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${ADDRESS_LINE_1}, ${ADDRESS_LINE_2}`
+)}`;
+
+// TODO: substitua pela nota e quantidade reais do Google Perfil da Empresa
+// (deixe null para ocultar o bloco até ter os dados reais).
+const GOOGLE_RATING = null; // ex.: 4.9
+const GOOGLE_REVIEW_COUNT = null; // ex.: 128
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -8,16 +29,30 @@ export default function Footer() {
           <a href="#inicio" className="footer__logo">
             <span className="footer__logo-mark">X</span>
             <span className="footer__logo-text">
-              Car-X
+              Car X
               <small>Auto Center</small>
             </span>
           </a>
-          <p>Cuidado, confiança e tecnologia para manter seu veículo sempre em movimento.</p>
+          <p className="footer__tagline">Diagnóstico claro. Decisão segura.</p>
+
+          {GOOGLE_RATING && (
+            <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="footer__reviews">
+              <StarIcon />
+              <strong>{GOOGLE_RATING}</strong>
+              <span>({GOOGLE_REVIEW_COUNT} avaliações no Google)</span>
+            </a>
+          )}
+
+          <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="footer__directions">
+            <PinIcon />
+            Como chegar
+          </a>
+
           <div className="footer__social">
-            <a href="#" aria-label="Instagram"><InstagramIcon /></a>
-            <a href="#" aria-label="Facebook"><FacebookIcon /></a>
-            <a href="#" aria-label="WhatsApp"><WhatsAppIcon /></a>
-            <a href="#" aria-label="YouTube"><YoutubeIcon /></a>
+            <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
+            <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookIcon /></a>
+            <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><WhatsAppIcon /></a>
+            <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube"><YoutubeIcon /></a>
           </div>
         </div>
 
@@ -25,8 +60,9 @@ export default function Footer() {
           <h4>Links rápidos</h4>
           <ul>
             <li><a href="#inicio">Início</a></li>
+            <li><a href="#metodo">Método Car X</a></li>
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#sobre">Diferenciais</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
@@ -34,8 +70,14 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Contato</h4>
           <ul>
+            {/* TODO: confirme telefone fixo e e-mail reais */}
             <li>(47) 9228-8950</li>
-            <li>R. 418, 475 - Morretes<br />Itapema - SC, 88220-000</li>
+            <li>contato@carxautocenter.com.br</li>
+            <li>
+              {ADDRESS_LINE_1}
+              <br />
+              {ADDRESS_LINE_2}
+            </li>
           </ul>
         </div>
 
@@ -49,16 +91,23 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom container">
-        <span>© 2026 Car-X Auto Center. Todos os direitos reservados.</span>
+        <span>© 2026 Car X Auto Center. Todos os direitos reservados.</span>
         <div className="footer__legal">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Uso</a>
+          {/* TODO: apontar para as páginas reais de Política de Privacidade e Termos de Uso */}
+          <a href="/politica-de-privacidade">Política de Privacidade</a>
+          <a href="/termos-de-uso">Termos de Uso</a>
         </div>
       </div>
     </footer>
   );
 }
 
+function StarIcon() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5b400" aria-hidden="true"><path d="M12 2.5l2.9 6.3 6.8.7-5.1 4.7 1.5 6.8L12 17.6 5.9 21l1.5-6.8-5.1-4.7 6.8-.7L12 2.5Z" /></svg>;
+}
+function PinIcon() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" stroke="currentColor" strokeWidth="1.6" /><circle cx="12" cy="10" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg>;
+}
 function InstagramIcon() {
   return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6" /><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.6" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>;
 }

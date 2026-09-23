@@ -8,13 +8,21 @@ export default function Hero() {
       <div className="container hero__inner">
         <div className="hero__content">
           <h1 className="hero__title">
-            Cuidado em
+            Antes de trocar,
             <br />
-            cada <span className="hero__title-accent">detalhe</span>
+            a gente <span className="hero__title-accent">verifica</span>.
           </h1>
           <p className="hero__subtitle">
-            Especialistas em diagnóstico, manutenção e performance para seu
-            veículo rodar com segurança e confiança.
+            Seu carro apresenta barulho, falha, luz no painel ou algum
+            comportamento diferente?
+            <br />
+            <br />
+            Na Car X, primeiro avaliamos e confirmamos o que está
+            acontecendo. Depois mostramos o que encontramos, explicamos as
+            prioridades e orientamos as possibilidades.
+            <br />
+            <br />
+            <strong>Você entende. A gente orienta. Você decide.</strong>
           </p>
 
           <ul className="hero__features">
@@ -26,21 +34,26 @@ export default function Hero() {
             ))}
           </ul>
 
-          <a
-            href="https://wa.me/+554792288950"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary hero__btn"
-          >
-            <WhatsAppIcon />
-            Agendar via WhatsApp
-          </a>
+          <div className="hero__actions">
+            <a
+              href="https://wa.me/554792288950"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary hero__btn"
+            >
+              <WhatsAppIcon />
+              Contar o que está acontecendo
+            </a>
+            <a href="#metodo" className="btn btn-outline hero__btn-secondary">
+              Conhecer o método Car X
+            </a>
+          </div>
         </div>
 
         <div className="hero__media">
           <img
             src="/car-hero.jpg"
-            alt="Veículo em oficina especializada Car-X Auto Center"
+            alt="Veículo em oficina especializada Car X Auto Center"
           />
         </div>
       </div>

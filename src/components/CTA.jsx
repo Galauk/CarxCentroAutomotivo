@@ -9,19 +9,20 @@ export default function CTA() {
             <WhatsAppIcon />
           </div>
           <div>
-            <h2>Agende seu serviço agora</h2>
-            <p>Fale com nossa equipe e agende seu horário com rapidez e praticidade.</p>
+            <h2>Percebeu algo diferente no seu carro?</h2>
+            <p>Conte para a Car X o que está acontecendo. Nossa equipe avalia o sinal e orienta o próximo passo.</p>
           </div>
         </div>
 
         <div className="cta__actions">
-          <a href="https://wa.me/+554792288950" className="btn btn-outline cta__btn">
+          <a
+            href="https://wa.me/554792288950"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline cta__btn"
+          >
             <WhatsAppIcon />
-            WhatsApp (47) 9228-8950
-          </a>
-          <a href="tel:+554792288950" className="btn btn-outline cta__btn">
-            <PhoneIcon />
-            Ligar (47) 9228-8950
+            Falar com a Car X
           </a>
         </div>
       </div>
@@ -37,10 +38,3 @@ function WhatsAppIcon() {
   );
 }
 
-function PhoneIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M6.5 3h3l1.5 4.5-2 1.5a13 13 0 0 0 6 6l1.5-2 4.5 1.5v3c0 1-1 2-2.5 2C10.5 19.5 4.5 13.5 4.5 5.5 4.5 4 5.5 3 6.5 3Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
-    </svg>
-  );
-}

@@ -4,7 +4,7 @@ const SERVICES = [
   {
     title: 'Diagnóstico / OBD',
     description:
-      'Leitura e interpretação de falhas com equipamentos de última geração para identificar o problema com precisão.',
+      'A luz acendeu? O scanner mostra o sinal, e a avaliação técnica confirma o que está acontecendo antes de qualquer troca.',
     icon: 'diagnostico',
   },
   {
@@ -64,7 +64,7 @@ export default function Services() {
 
         <div className="services__banner">
           <ShieldIcon />
-          <span>Trabalho técnico, peças de qualidade e compromisso com a sua segurança.</span>
+          <span>Avaliação antes da execução. Você entende o que está sendo feito e por quê.</span>
         </div>
       </div>
     </section>

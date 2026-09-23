@@ -44,12 +44,39 @@
   color: var(--text-secondary);
 }
 
-.footer__brand p {
+.footer__tagline {
   margin-top: 16px;
   color: var(--text-secondary);
   font-size: 0.88rem;
   line-height: 1.6;
   max-width: 32ch;
+}
+
+.footer__reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 0.86rem;
+  color: var(--text-primary);
+}
+
+.footer__reviews span {
+  color: var(--text-secondary);
+}
+
+.footer__directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: var(--red-accent);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.footer__directions:hover {
+  text-decoration: underline;
 }
 
 .footer__social {

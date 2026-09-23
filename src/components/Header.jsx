@@ -3,8 +3,9 @@ import './Header.css';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
+  { label: 'Método Car X', href: '#metodo' },
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Sobre', href: '#sobre' },
+  { label: 'Diferenciais', href: '#sobre' },
   { label: 'Contato', href: '#contato' },
 ];
 
@@ -17,7 +18,7 @@ export default function Header() {
         <a href="#inicio" className="header__logo">
           <span className="header__logo-mark">X</span>
           <span className="header__logo-text">
-            Car-X
+            Car X
             <small>Auto Center</small>
           </span>
         </a>
@@ -36,13 +37,13 @@ export default function Header() {
         </nav>
 
         <a
-          href="https://wa.me/+554792288950"
+          href="https://wa.me/554792288950"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary header__cta"
         >
           <WhatsAppIcon />
-          Agendar Agora
+          Falar com a Car X
         </a>
 
         <button
